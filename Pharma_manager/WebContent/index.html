@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm()
+{
+  let x = document.forms["myForm"]["name"].value;
+  if (x == "") 
+  {
+   alert("Name must be filled out");
+   return false;
+    
+   let y= document.forms["myForm"]["Company"].value;
+   if (y == "") 
+    {
+   alert("Company must be filled out");
+   return false;
+     
+  let z= document.forms["myForm"]["Mfddate"].value;
+  if (z == "") 
+      {
+  alert("Mfddate must be filled out");
+  return false;
+        
+  let a= document.forms["myForm"]["ExpDate"].value;
+  if (a == "") 
+        {
+    alert("ExpDate must be filled out");
+    return false;
+          
+          
+}
+}
+}
+}
+}
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Medicine</title>
+</head>
+<body>
+
+<h1>Add New Medicine</h1>
+<form action="SaveServlet" method="post" name="myform">
+<table>
+<tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
+<tr><td>Company:</td><td><input type="text" name="Company"/></td></tr>
+<tr><td>Mfddate:</td><td><input type="text" name="Mfddate"/></td></tr>
+<tr><td>ExpDate:</td><td><input type="text" name="ExpDate"/></td></tr>
+</td></tr>
+<tr><td colspan="2"><input type="submit" value="Save Medicine"/></td></tr>
+</table>
+
+</form>
+
+<br/>
+<a href="ViewServlet">view Medicine</a>
+
+</body>
+</html>
